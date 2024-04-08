@@ -1,0 +1,290 @@
+body{
+    background-color: #F6F5F5;
+}
+
+.pricingplancontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 2rem;
+  }
+
+/*navigation bar*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    
+}
+
+.iconmenu{
+    display: none;
+}
+
+.navigation{
+    display: inline-flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation > P{
+    color: blueviolet;
+}
+
+.navaktif{
+    background-color: #F1EAFF;
+    padding: 10px;
+    border-radius: 8px;
+}
+.loginsignup{
+    display: inline-flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px 0px 0px 50px;
+    padding: 0;
+}
+
+/* dropdownmenu */
+.dropdownmenu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdownmenu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownmenu .open{
+    height: 240px;
+}
+
+/* menu in mobile */
+.menu{
+
+    width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 8px;
+  margin: 2px 0;
+
+}
+
+/* button state */
+.buttonaktif{
+    border: none;
+  background-color: blueviolet;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block; 
+}
+
+.buttontidakaktif{
+    border: none;
+  background-color:#F6F5F5;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block; 
+}
+
+/* Pricing information */
+.pricingheadline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricingheadline > p{
+    text-align: center;
+}
+
+.pricingperiod{
+    display: flex;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blueviolet;
+}
+
+.pricingtype{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.pricingtype > *{
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.recomended{
+display:inline-flex;
+flex-direction: column;
+
+}
+
+.popular{
+    display: inline-flex;
+    flex-direction: column;
+    height: 10px;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    background-color: #F1EAFF;
+    justify-content: center;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-color: blueviolet;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+    height: 450px;
+    width: 300px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 8px;
+    }
+
+.planpopular {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+    height: 450px;
+    width: 300px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    }
+    
+
+.content{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+}
+
+
+.getstarted{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.ulist{
+    line-height: 2;
+}
+
+.margintoptext{
+    margin-top: 3px;
+}
+
+/* web resvonsive */
+@media (max-width: 1031px){
+    .pricingplancontainer{
+        flex-direction: column;
+      height: 100%;
+    }
+    .pricingheadline{
+        flex-direction: column;
+      height: 100%;
+    }
+    .pricingtype {
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+      height: 100%;
+    }
+
+    .plan{
+        margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .recomended{
+        margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+@media (max-width: 850px) {
+    .navigation{
+        display: none;
+    }
+    .loginsignup{
+        display: none;
+    }
+    .iconmenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .pricingplancontainer{
+        flex-direction: column;
+      height: 100%;
+    }
+    .pricingheadline{
+        flex-direction: column;
+      height: 100%;
+    }
+    .pricingtype {
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+      height: 100%;
+    }
+
+    .plan{
+        margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .recomended{
+        margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .dropdownmenu{
+        display: block;
+    }
+}
